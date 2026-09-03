@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — A Tupi Barber</title>
+<meta name="description" content="Endereço, horário de funcionamento e Instagram da A Tupi Barber, no Jardim das Flores.">
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.jpg" alt="Logo A Tupi Barber">
+      <span class="brand-text">
+        <span class="name">A TUPI BARBER</span>
+        <span class="tag">BARBEARIA · JARDIM DAS FLORES</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary" href="https://wa.me/5512996288273?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20na%20A%20Tupi%20Barber!" target="_blank" rel="noopener">
+        <span class="label">Agendar horário</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="chevron-bar" aria-hidden="true"></div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Contato</span>
+    <h1>Bora marcar<br>seu horário?</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Início</a> / <span>Contato</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="location-block">
+      <div class="location-details">
+        <div class="detail-row">
+          <span class="ico">&#128205;</span>
+          <div>
+            <h4>Endereço</h4>
+            <p>Rua das Aliseas, 133<br>Jardim das Flores</p>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="ico">&#128337;</span>
+          <div>
+            <h4>Horário de atendimento</h4>
+            <p>Segunda a sábado, das 9h às 19h<br>Atendimento por agendamento</p>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="ico">&#128222;</span>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/5512996288273" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">(12) 99628-8273</a> — chame direto para agendar</p>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="ico">&#128247;</span>
+          <div>
+            <h4>Instagram</h4>
+            <p><a href="https://instagram.com/tupi_barber" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">@tupi_barber</a> — acompanhe os trabalhos por lá</p>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/5512996288273?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20na%20A%20Tupi%20Barber!" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 8px;">Chamar no WhatsApp</a>
+      </div>
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+das+Aliseas,+133,+Jardim+das+Flores&output=embed"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa - Rua das Aliseas, 133, Jardim das Flores"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="section section-dim">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Fale com a gente</span>
+        <h2>Deixe sua mensagem<br>por aqui também.</h2>
+      </div>
+      <p>Preferimos o Instagram para agendamentos rápidos, mas você também pode deixar seus dados por aqui que retornamos assim que possível.</p>
+    </div>
+
+    <form class="contact-form" style="max-width: 720px;">
+      <div class="form-row">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="field">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico">
+            <option value="">Selecione...</option>
+            <option value="corte">Corte Masculino</option>
+            <option value="barba">Barba</option>
+            <option value="combo">Corte + Barba</option>
+            <option value="infantil">Corte Infantil</option>
+            <option value="fade">Degradê / Fade</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="dia">Dia preferido</label>
+          <input type="date" id="dia" name="dia">
+        </div>
+      </div>
+      <div class="field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco do que você precisa..."></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </div>
+      <p class="form-feedback" style="display:none; color: var(--blue); font-weight: 600;"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.jpg" alt="Logo A Tupi Barber">
+          <span class="brand-text">
+            <span class="name" style="color:#fff;">A TUPI BARBER</span>
+          </span>
+        </a>
+        <p>Barbearia nova no Jardim das Flores, com a experiência de Gabriel Tupinambá em corte masculino.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li>Rua das Aliseas, 133 — Jardim das Flores</li>
+            <li>Seg a Sáb, 09h–19h</li>
+            <li><a href="https://wa.me/5512996288273" target="_blank" rel="noopener">(12) 99628-8273</a></li>
+            <li><a href="https://instagram.com/tupi_barber" target="_blank" rel="noopener">@tupi_barber</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="current-year">2026</span> A Tupi Barber. Todos os direitos reservados.</span>
+      <div class="socials">
+        <a href="https://instagram.com/tupi_barber" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5512996288273?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20na%20A%20Tupi%20Barber!" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.48L4 29l7.72-1.866A11.93 11.93 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3Zm0 21.6c-1.98 0-3.83-.55-5.41-1.5l-.39-.23-4.58 1.107 1.13-4.47-.25-.4A9.55 9.55 0 0 1 5.4 15c0-5.85 4.76-10.6 10.6-10.6S26.6 9.15 26.6 15 21.85 24.6 16.001 24.6Zm5.83-7.94c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.27-.19.21-.38.24-.7.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.63-.53-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.67 0 1.57 1.15 3.09 1.31 3.3.16.21 2.26 3.45 5.47 4.84.76.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.29-.21-.61-.37Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
