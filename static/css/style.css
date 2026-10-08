@@ -25,8 +25,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-html { max-width: 100%; }
-body { max-width: 100%; }
+html, body { max-width: 100%; overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -471,9 +470,9 @@ p { margin: 0 0 1em; }
 }
 .info-card:nth-child(2) { border-top-color: var(--blue); }
 .info-card:nth-child(3) { border-top-color: var(--paper); }
-.info-card h3 { font-size: 1rem; margin-bottom: 12px; font-family: var(--font-body); font-weight: 700; }
-.info-card p { color: var(--paper-dim); font-size: 0.92rem; margin: 0 0 6px; }
-.info-card a { color: var(--paper); text-decoration: underline; text-underline-offset: 3px; }
+.info-card h3 { color: #fff; font-size: 1rem; margin-bottom: 12px; font-family: var(--font-body); font-weight: 700; }
+.info-card p { color: #fff; font-size: 0.92rem; margin: 0 0 6px; }
+.info-card a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Map / location block ---------- */
 .location-block {
