@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre — A Tupi Barber{% endblock %}
+
+{% block description %}Conheça a história da A Tupi Barber e do barbeiro Gabriel Tupinambá.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Sobre</span>
+    <h1>A barbearia nova<br>do bairro, com<br>experiência de sobra.</h1>
+    <div class="breadcrumb">
+      <a href="{{ url_for('index') }}">Início</a> / <span>Sobre</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img src="{{ url_for('static', filename='assets/img/corte-03.jpg') }}" alt="Gabriel Tupinambá finalizando um corte na Tupi Barber">
+      <div class="badge">
+        <span class="big">A Tupi Barber</span>
+        <span class="small">Jardim das Flores</span>
+      </div>
+    </div>
+    <div class="about-body">
+      <span class="kicker">Quem faz</span>
+      <h2>Gabriel Tupinambá</h2>
+      <p>Por trás da cadeira da A Tupi Barber está Gabriel Tupinambá, barbeiro com experiência consolidada em corte de cabelo masculino. Depois de anos aperfeiçoando a técnica — do corte clássico ao degradê mais moderno — Gabriel decidiu abrir seu próprio espaço no Jardim das Flores.</p>
+      <p>A barbearia é recente, mas a bagagem não é: cada atendimento carrega o cuidado de quem entende que um bom corte muda o dia de qualquer pessoa. Aqui, o objetivo é simples — te receber bem, ouvir o que você quer e entregar um resultado à altura.</p>
+      <ul class="about-list">
+        <li><span class="bullet">&#10003;</span> Experiência sólida em corte masculino</li>
+        <li><span class="bullet">&#10003;</span> Atendimento individual, sem pressa</li>
+        <li><span class="bullet">&#10003;</span> Ambiente novo, pensado para o seu conforto</li>
+        <li><span class="bullet">&#10003;</span> Agendamento fácil pelo Instagram</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">O espaço</span>
+        <h2>Um ambiente pensado<br>para o seu corte.</h2>
+      </div>
+      <p>Estrutura nova, equipamentos cuidados e um cantinho reservado só para você.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-wide" style="grid-row: span 22;">
+        <img src="{{ url_for('static', filename='assets/img/espaco-01.jpg') }}" alt="Estação de atendimento da A Tupi Barber, com espelho iluminado e cadeira de barbeiro">
+        <span class="cap">Estação de atendimento</span>
+      </div>
+      <div class="gallery-item" style="grid-row: span 20;">
+        <img src="{{ url_for('static', filename='assets/img/corte-01.jpg') }}" alt="Cliente sendo atendido na cadeira da barbearia">
+        <span class="cap">Atenção em cada detalhe</span>
+      </div>
+      <div class="gallery-item" style="grid-row: span 20;">
+        <img src="{{ url_for('static', filename='assets/img/fade-01.jpg') }}" alt="Acabamento de degradê finalizado">
+        <span class="cap">Precisão no acabamento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Nossos valores</span>
+        <h2>O que guia cada<br>atendimento aqui.</h2>
+      </div>
+    </div>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <h3>Capricho</h3>
+        <p>Cada corte é finalizado com atenção aos detalhes, do início ao acabamento.</p>
+      </div>
+      <div class="info-card">
+        <h3>Respeito ao seu tempo</h3>
+        <p>Atendimento por agendamento para você não esperar à toa.</p>
+      </div>
+      <div class="info-card">
+        <h3>Evolução constante</h3>
+        <p>Sempre buscando novas técnicas para trazer o melhor pro seu visual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="text-center" style="padding: 0 0 88px;">
+  <div class="wrap">
+    <a class="btn btn-dark" href="{{ url_for('contato') }}">Ver endereço e horários</a>
+  </div>
+</section>
+{% endblock %}
