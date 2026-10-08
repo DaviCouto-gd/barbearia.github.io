@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Contato — A Tupi Barber{% endblock %}
+
+{% block description %}Endereço, horário de funcionamento e Instagram da A Tupi Barber, no Jardim das Flores.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Contato</span>
+    <h1>Bora marcar<br>seu horário?</h1>
+    <div class="breadcrumb">
+      <a href="{{ url_for('index') }}">Início</a> / <span>Contato</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="location-block">
+      <div class="location-details">
+        <div class="detail-row">
+          <span class="ico">&#128205;</span>
+          <div>
+            <h4>Endereço</h4>
+            <p>Rua das Aliseas, 133<br>Jardim das Flores</p>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="ico">&#128337;</span>
+          <div>
+            <h4>Horário de atendimento</h4>
+            <p>Segunda a sábado, das 9h às 19h<br>Atendimento por agendamento</p>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="ico">&#128222;</span>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/5512996288273" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">(12) 99628-8273</a> — chame direto para agendar</p>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="ico">&#128247;</span>
+          <div>
+            <h4>Instagram</h4>
+            <p><a href="https://instagram.com/tupi_barber" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">@tupi_barber</a> — acompanhe os trabalhos por lá</p>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/5512996288273?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20na%20A%20Tupi%20Barber!" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 8px;">Chamar no WhatsApp</a>
+      </div>
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+das+Aliseas,+133,+Jardim+das+Flores&output=embed"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa - Rua das Aliseas, 133, Jardim das Flores"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="section section-dim">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Fale com a gente</span>
+        <h2>Deixe sua mensagem<br>por aqui também.</h2>
+      </div>
+      <p>Preferimos o Instagram para agendamentos rápidos, mas você também pode deixar seus dados por aqui que retornamos assim que possível.</p>
+    </div>
+
+    <form class="contact-form" style="max-width: 720px;">
+      <div class="form-row">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="field">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico">
+            <option value="">Selecione...</option>
+            <option value="corte">Corte Masculino</option>
+            <option value="barba">Barba</option>
+            <option value="combo">Corte + Barba</option>
+            <option value="infantil">Corte Infantil</option>
+            <option value="fade">Degradê / Fade</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="dia">Dia preferido</label>
+          <input type="date" id="dia" name="dia">
+        </div>
+      </div>
+      <div class="field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco do que você precisa..."></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </div>
+      <p class="form-feedback" style="display:none; color: var(--blue); font-weight: 600;"></p>
+    </form>
+  </div>
+</section>
+{% endblock %}

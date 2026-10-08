@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Serviços — A Tupi Barber{% endblock %}
+
+{% block description %}Conheça os serviços da A Tupi Barber: corte masculino, barba, degradê, corte infantil e desenho.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Serviços</span>
+    <h1>Feito sob medida<br>para o seu estilo.</h1>
+    <div class="breadcrumb">
+      <a href="{{ url_for('index') }}">Início</a> / <span>Serviços</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Tabela de serviços</span>
+        <h2>Valores sob consulta,<br>atendimento sob agendamento.</h2>
+      </div>
+      <p>A Tupi Barber é recente na região e os valores ainda estão sendo ajustados conforme cada atendimento. Fale com a gente pelo Instagram para confirmar o valor e agendar seu horário.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <span class="icon">01</span>
+        <h3>Corte Masculino</h3>
+        <p>Do clássico ao moderno, com risco e acabamento na navalha. Inclui lavagem e finalização.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">02</span>
+        <h3>Barba</h3>
+        <p>Desenho, toalha quente e navalha para um acabamento limpo e alinhado.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">03</span>
+        <h3>Corte + Barba</h3>
+        <p>O combo completo: cabelo e barba no mesmo horário, com acabamento único.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">04</span>
+        <h3>Corte Infantil</h3>
+        <p>Atendimento com paciência e capricho para os pequenos clientes.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">05</span>
+        <h3>Degradê / Fade</h3>
+        <p>Transições suaves ou navalhadas, do baixo fade ao high fade.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">06</span>
+        <h3>Desenho e Risco</h3>
+        <p>Riscos, desenhos e detalhes personalizados no acabamento final.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">07</span>
+        <h3>Sobrancelha</h3>
+        <p>Alinhamento na navalha ou na pinça, complementando o visual.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">08</span>
+        <h3>Pigmentação de Barba</h3>
+        <p>Uniformiza falhas e realça o desenho da barba.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+
+      <article class="service-card">
+        <span class="icon">09</span>
+        <h3>Platinado / Coloração</h3>
+        <p>Para quem quer ousar com um visual diferente.</p>
+        <span class="price">Sob consulta <span>&rarr;</span></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section section-dim">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Como funciona</span>
+        <h2>Do agendamento ao<br>corte finalizado.</h2>
+      </div>
+      <p>Um processo simples pensado para você não perder tempo.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-step">
+        <span class="n">1</span>
+        <h3>Chame no Instagram</h3>
+        <p>Envie uma mensagem para @tupi_barber com o dia e horário desejado.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="n">2</span>
+        <h3>Confirme o horário</h3>
+        <p>A gente confirma disponibilidade dentro do horário de Seg a Sáb, 9h às 19h.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="n">3</span>
+        <h3>Chegue no endereço</h3>
+        <p>Rua das Aliseas, 133 — Jardim das Flores. Chegue com alguns minutos de antecedência.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="n">4</span>
+        <h3>Saia satisfeito</h3>
+        <p>Corte, barba ou combo — sempre com acabamento cuidadoso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-strip">
+  <div class="wrap">
+    <blockquote>“Aqui não existe corte igual. Cada cliente sai com o resultado pensado pra ele.”</blockquote>
+    <cite>— Gabriel Tupinambá</cite>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="wrap">
+    <h2 style="margin-bottom: 20px;">Pronto para agendar seu horário?</h2>
+    <p style="max-width: 50ch; margin: 0 auto 32px; color:#4a4a4a;">Fale com a gente agora pelo Instagram e escolha o melhor dia e horário dentro da nossa agenda.</p>
+    <a class="btn btn-dark" href="https://wa.me/5512996288273?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20na%20A%20Tupi%20Barber!" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  </div>
+</section>
+{% endblock %}
