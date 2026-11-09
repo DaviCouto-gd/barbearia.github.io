@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Mensagens recebidas — A Tupi Barber{% endblock %}
+
+{% block description %}Veja em tempo real as mensagens enviadas pelo formulário de contato da A Tupi Barber.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Mural</span>
+    <h1>Mensagens em<br>tempo real.</h1>
+    <div class="breadcrumb">
+      <a href="{{ url_for('index') }}">Início</a> / <span>Mensagens</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="live-bar">
+      <span id="status-ao-vivo" class="live-status" role="status">
+        <span class="dot"></span>
+        <span id="status-texto">Ao vivo · atualiza a cada 5 segundos</span>
+      </span>
+      <a class="btn btn-dark" href="{{ url_for('contato') }}">Enviar uma mensagem</a>
+    </div>
+
+    <p id="aviso-erro" class="form-feedback erro" {% if not erro_banco %}hidden{% endif %}>Não foi possível ler o banco de dados agora. Tentando de novo em instantes.</p>
+
+    <p id="sem-mensagens" class="vazio" {% if mensagens %}hidden{% endif %}>Ainda não há mensagens. Seja o primeiro a escrever pelo formulário de contato!</p>
+
+    <div id="lista-mensagens" class="mensagens-grid" data-api="{{ url_for('api_mensagens') }}">
+      {% for m in mensagens %}
+      <article class="msg-card" data-id="{{ m.id }}">
+        <header class="msg-topo">
+          <strong class="msg-nome">{{ m.nome }}</strong>
+          <time class="msg-hora">{{ m.hora }}</time>
+        </header>
+        {% if m.servico %}<span class="msg-tag">{{ m.servico }}</span>{% endif %}
+        {% if m.dia %}<p class="msg-dia">Dia preferido: {{ m.dia }}</p>{% endif %}
+        {% if m.mensagem %}<p class="msg-texto">{{ m.mensagem }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/mensagens.js') }}"></script>
+{% endblock %}
